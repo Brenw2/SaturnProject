@@ -73,7 +73,7 @@ Saturn.prototype.init = function(param)
 Saturn.prototype.createGlobe = function(map)
 {
     // Create our Saturn with nice texture
-    var saturnmap = "../images/saturn_bjoernjonsson.jpg";
+    var saturnmap = "/images/saturn_bjoernjonsson.jpg";
     var geometry = new THREE.SphereGeometry(1, 32, 32);
     var texture = THREE.ImageUtils.loadTexture(saturnmap);
     var material = new THREE.MeshPhongMaterial( {map: texture} );
@@ -89,7 +89,7 @@ Saturn.prototype.createGlobe = function(map)
 Saturn.prototype.createRings = function()
 {
     // Create our Saturn with nice texture
-    var ringsmap = "../images/SatRing.png";
+    var ringsmap = "/images/SatRing.png";
     var geometry = new Saturn.Rings(1.1, 1.867, 64);
     
     var texture = THREE.ImageUtils.loadTexture(ringsmap);
